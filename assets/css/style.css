@@ -4,11 +4,13 @@
     src: url(../fonts/Poppins/Poppins-Regular.ttf);
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url(../fonts/Poppins/Poppins-Light.ttf);
     font-weight: 300;
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url(../fonts/Poppins/Poppins-ExtraLight.ttf);
@@ -17,6 +19,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .font-regular {
@@ -31,4 +35,93 @@ body {
     font-weight: 200;
 }
 
+.font-size-big {
+    font-size: 2rem;
+}
+
 /* HERO */
+#hero {
+    position: relative;
+}
+
+.hero-download button {
+    width: 100%;
+    background-color: #4CB050;
+    border: none;
+    color: white;
+    padding: .5rem 0;
+}
+
+.hero-tour button {
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: .5rem 0;
+}
+
+/* MAIN */
+main {
+    padding: 0 1rem;
+}
+
+/* APP */
+#app {
+    margin-top: 3rem;
+}
+
+#app h1 span {
+    display: block;
+    color: #4CB050;
+    margin-bottom: .5rem;
+}
+
+#app p:nth-child(3) {
+    margin: 1rem 0;
+}
+
+#app .fa-brands:nth-child(1) {
+    color: #4CB050;
+}
+
+#app .fa-brands:nth-child(2) {
+    color: #010002;
+}
+
+#app .fa-brands:nth-child(3) {
+    color: #2196F3;
+}
+
+#app button {
+    display: block;
+    margin: 0 auto 1rem;
+    border: none;
+    background-color: white;
+}
+
+.app-preview {
+    margin: 0 1rem;
+}
+
+/* CLARITY */
+
+#clarity h2 span {
+    display: block;
+    color: #F34335;
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+/* Mobile */
+@media (min-width: 320px) {}
+
+/* Tablet */
+@media (min-width: 768px) {}
+
+/* Desktop */
+@media (min-width: 1024px) {}
