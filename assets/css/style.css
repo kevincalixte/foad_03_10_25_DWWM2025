@@ -60,14 +60,16 @@ body {
     padding: .5rem 0;
 }
 
-/* MAIN */
-main {
+/* PADDING GENERAL */
+#app,
+#clarity,
+#pricing {
     padding: 0 1rem;
 }
 
 /* APP */
 #app {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 #app h1 span {
@@ -100,7 +102,7 @@ main {
 }
 
 .app-preview {
-    margin: 0 1rem; 
+    margin: 0 1rem;
 }
 
 /* CLARITY */
@@ -111,6 +113,62 @@ main {
     margin-bottom: .5rem;
 }
 
+.clarity-img {
+    display: none;
+}
+
+#clarity {
+    background-color: #F1F1F1;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* FEATURES */
+#features {
+    background-color: #616161;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3rem 0;
+    color: white;
+}
+
+#features div {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* PRICING */ 
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+ 
+}
+
+.pricing-basic, .pricing-premium{
+    background-color: #F1F1F1;
+    width: 100%;  
+}
+
+/* FOOTER */
+footer{
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0
+}
 
 
 
