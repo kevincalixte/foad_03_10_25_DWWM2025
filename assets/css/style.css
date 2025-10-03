@@ -128,22 +128,78 @@ body {
 #features {
     background-color: #616161;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     gap: 2rem;
     padding: 3rem 0;
     color: white;
 }
 
-#features div {
-    width: 15%;
+#features .features-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.features-icons .icon {
+    width: 14%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 
-/* PRICING */ 
+#features .features-icons .icon:nth-child(1) i {
+    color: #FF9801;
+}
+
+#features .features-icons .icon:nth-child(2) i {
+    color: #F54337;
+}
+
+#features .features-icons .icon:nth-child(3) i {
+    color: #D1BE0F;
+}
+
+#features .features-icons .icon:nth-child(4) i {
+    color: #4CB050;
+}
+
+#features .features-icons .icon:nth-child(5) i {
+    color: #FFFFFF;
+}
+
+#features .features-icons .icon:nth-child(6) i {
+    color: #2196F3;
+}
+
+#features .features-icons .icon:nth-child(7) i {
+    color: #FFC108;
+}
+
+#features .features-icons .icon:nth-child(8) i {
+    color: #00BCD2;
+}
+
+#features .features-icons .icon:nth-child(9) i {
+    color: #FDF6E6;
+}
+
+#features .features-icons .icon:nth-child(10) i {
+    color: #FF9801;
+}
+
+#features .features-icons .icon:nth-child(11) i {
+    color: #757575;
+}
+
+#features .features-icons .icon:nth-child(12) i {
+    color: #EA1E63;
+}
+
+/* PRICING */
 #pricing {
     display: flex;
     flex-direction: column;
@@ -152,16 +208,50 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     gap: 2rem;
- 
 }
 
-.pricing-basic, .pricing-premium{
-    background-color: #F1F1F1;
-    width: 100%;  
+.pricing-basic,
+.pricing-premium {
+    /* background-color: #F1F1F1; */
+    width: 100%;
+}
+
+#pricing ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pricing-basic li {
+    background-color: white;
+    padding: .3rem;
+}
+
+.pricing-basic li:nth-child(1) {
+    background-color: #616161;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.pricing-premium li {
+    background-color: white;
+}
+
+.pricing-premium li:nth-child(1) {
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+#pricing button {
+    background-color: black;
+    color: white;
+    padding: .3rem .5rem;
+    margin-top: 1rem;
 }
 
 /* FOOTER */
-footer{
+footer {
     background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
