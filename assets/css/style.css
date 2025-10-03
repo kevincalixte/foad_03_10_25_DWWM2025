@@ -44,6 +44,10 @@ body {
     position: relative;
 }
 
+.hero-download-destkop {
+    display: none;
+}
+
 .hero-download button {
     width: 100%;
     background-color: #4CB050;
@@ -260,9 +264,6 @@ footer {
     padding: 2rem 0
 }
 
-
-
-
 /* MEDIA QUERIES*/
 
 /* Mobile */
@@ -272,4 +273,100 @@ footer {
 @media (min-width: 768px) {}
 
 /* Desktop */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    /* HERO */
+    .hero-download {
+        position: absolute;
+        top: 50%;
+        left: 1vw;
+        transform: translateY(-50%);
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: black;
+        color: white;
+        padding: 1.5rem;
+        opacity: 60%;
+        border-radius: .5rem;
+    }
+
+    .hero-download p:first-child {
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+    }
+
+    .hero-download-destkop {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .hero-tour {
+        position: absolute;
+        right: 1vw;
+        top: 50%;
+        transform: translateY(-50%);
+        ;
+    }
+
+    .hero-tour button {
+        padding: .5rem;
+    }
+
+    /* APP */
+    #app {
+        display: flex;
+    }
+
+    .app-content {
+        width: 70vw;
+    }
+
+    .app-preview {
+        width: 30vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* CLARITY */
+    #clarity {
+        display: flex;
+    }
+
+    .clarity-img {
+        display: block;  
+    }
+
+    .clarity-text{
+        width: 70vw;
+        padding: 5rem;
+    }
+
+    /* FEATURES */
+
+    .features-icons{
+        margin: 3rem;
+        width: 100%;
+    }
+    .features-icons .icon {
+        width: 20%;
+    }
+    .features-icons .icon i {
+        font-size: 3rem;
+    }
+    
+    /* PRICING */
+    #pricing {
+        
+    }
+    .pricing-text{
+        
+    }
+
+
+}
