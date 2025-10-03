@@ -44,6 +44,10 @@ body {
     position: relative;
 }
 
+.hero-img img {
+    width: 100%;
+}
+
 .hero-download-destkop {
     display: none;
 }
@@ -216,14 +220,26 @@ body {
 
 .pricing-basic,
 .pricing-premium {
-    /* background-color: #F1F1F1; */
+    background-color: #F1F1F1;
     width: 100%;
+    padding-bottom: 1rem;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
 }
 
 #pricing ul {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+}
+
+#pricing li {
+    padding: 1rem;
 }
 
 .pricing-basic li {
@@ -309,11 +325,11 @@ footer {
         right: 1vw;
         top: 50%;
         transform: translateY(-50%);
-        ;
     }
 
     .hero-tour button {
         padding: .5rem;
+        border-radius: .5rem;
     }
 
     /* APP */
@@ -333,40 +349,47 @@ footer {
         align-items: center;
     }
 
+    #app button {
+        margin: 0;
+        background-color: #F1F1F1;
+        padding: .5rem 1rem;
+    }
+
     /* CLARITY */
     #clarity {
         display: flex;
     }
 
     .clarity-img {
-        display: block;  
+        display: block;
     }
 
-    .clarity-text{
+    .clarity-text {
         width: 70vw;
         padding: 5rem;
     }
 
     /* FEATURES */
 
-    .features-icons{
+    .features-icons {
         margin: 3rem;
         width: 100%;
     }
+
     .features-icons .icon {
         width: 20%;
     }
+
     .features-icons .icon i {
         font-size: 3rem;
     }
-    
+
     /* PRICING */
-    #pricing {
-        
+    .pricing-plans {
+        flex-direction: row;
+        justify-content: center;
     }
-    .pricing-text{
-        
-    }
+
 
 
 }
