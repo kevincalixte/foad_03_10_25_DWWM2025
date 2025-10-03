@@ -23,20 +23,36 @@ body {
     flex-direction: column;
 }
 
-.font-regular {
+.font-bold {
+    font-weight: bold;
+}
+
+.font-400 {
     font-weight: 400;
 }
 
-.font-light {
+.font-300 {
     font-weight: 300;
 }
 
-.font-extra-light {
+.font-200 {
     font-weight: 200;
 }
 
-.font-size-big {
+.font-mini {
+    font-size: .9rem;
+}
+
+.font-little {
+    font-size: 1.3rem;
+}
+
+.font-medium {
     font-size: 2rem;
+}
+
+.font-big {
+    font-size: 3rem;
 }
 
 /* HERO */
@@ -213,9 +229,14 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
     gap: 2rem;
+}
+
+.pricing-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .pricing-basic,
@@ -230,7 +251,6 @@ body {
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-
 }
 
 #pricing ul {
@@ -240,6 +260,10 @@ body {
 
 #pricing li {
     padding: 1rem;
+}
+
+#pricing li:last-child {
+    color: #8C8C8C;
 }
 
 .pricing-basic li {
@@ -306,6 +330,10 @@ footer {
         padding: 1.5rem;
         opacity: 60%;
         border-radius: .5rem;
+    }
+
+    .hero-download:hover {
+        opacity: 100%;
     }
 
     .hero-download p:first-child {
